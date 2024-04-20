@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator</title>
+    <link rel="stylesheet" href="gst.css">
+</head>
+<body>
+    <img src="output1.png" alt="">
+    <h1>GST Calculator</h1>
+    <div class="calculator">
+        <div class="input-group">
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" step="0.01" placeholder="Enter amount">
+        </div>
+        <div class="input-group slab-buttons">
+            <button onclick="selectSlab(5)">5%</button>
+            <button onclick="selectSlab(12)">12%</button>
+            <button onclick="selectSlab(18)">18%</button>
+            <button onclick="selectSlab(28)">28%</button>
+        </div>
+        <button onclick="calculateGST()">Calculate GST</button>
+        <button onclick="clearInputs()">Clear</button>
+        <div class="result" style="margin-top: 20px;"></div>
+    </div>
+    <p></p>
+    <script src="gst.js"></script>
+
+    <footer class="footer">
+            <div>
+                <a  href="https://www.linkedin.com/in/kumar-shalibhadra-mehta-3564772bb/">LinkedIn</a>
+                <a href="https://github.com/KumarShalibhadraMehta">GitHub</a>
+            </div>
+            <a style="font-size: medium;">Email: <span style="color: #fff; font-size: medium;">  &nbsp;shalibhadra.mehta2022@vitstudent.ac.in</span></a>
+
+        <p>© 2024 by KSM. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
